@@ -70,7 +70,6 @@ body {
     color: rgb(122, 122, 122); 
 }
 
-/*check first if it has any effect*/
 a:visited {
     color: white;
 }
@@ -118,10 +117,10 @@ input[type="Submit"]:hover {
 
 #features {
     display: grid;
-    grid-template: repeat(3, 1fr) / 10% 90%;
+    grid-template: repeat(3, 1fr) / minmax(min-content, 10%) minmax(min-content, 90%);
     width: 65%;
     margin: 3rem auto;
-    row-gap: 3rem;
+    gap: 3rem;
 }
 
 #features p {
