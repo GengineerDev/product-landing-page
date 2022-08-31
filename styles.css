@@ -38,6 +38,8 @@ body {
 
 #header {
     display: flex;
+    position: sticky;
+    top: 0;
 }
 
 .logo, #nav-bar {
@@ -49,7 +51,7 @@ body {
 
 .logo {
     font-size: 1.5rem;
-    background-color: rgba(255,255,255,0.85);
+    background-color: white;
 }
 
 #nav-bar {
@@ -155,4 +157,33 @@ iframe {
     background-color: var(--peach);
     width: 100%;
     text-align: center;
+}
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(199, 199, 199);
+    align-items: flex-end;
+    padding: 1rem;
+}
+
+footer div:first-of-type {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    font-size: 1.5rem;
+}
+
+footer > div > p > a,  footer > div > p > a:visited{
+    color: black;
+    text-decoration: none;    
+    transition: 0.3s
+}
+
+footer > div > p > a:hover {
+    color: rgb(84, 84, 84);
+    font-weight: bold;
+    text-decoration: none;    
 }
